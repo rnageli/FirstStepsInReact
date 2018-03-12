@@ -1,11 +1,11 @@
 
 //Import a lib to help create a component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
-//Import destructure
+import { AppRegistry } from 'react-native';
+import Header from './src/components/header';
 
 //create a component
-const App = () => <Text>Some text</Text>;
+const App = () => <Header />;
 //Arrow function implicitly returns when on one liners.
 
 //render it to the screen
