@@ -5,7 +5,7 @@ import { AppRegistry } from 'react-native';
 import Header from './src/components/header';
 
 //create a component
-const App = () => <Header />;
+const App = () => <Header headerText='Albums!' />;
 //Arrow function implicitly returns when on one liners.
 
 //render it to the screen
