@@ -1,11 +1,19 @@
 
 //Import a lib to help create a component
-import React from 'react';
-import { AppRegistry } from 'react-native';
+import React from 'react';//React is used to convert JSX to a series of React calls
+import { AppRegistry, View } from 'react-native';
 import Header from './src/components/header';
-
+import AlbumList from './src/components/AlbumList';
 //create a component
-const App = () => <Header headerText='Albums!' />;
+const App = () => {
+     return (
+          <View>
+               <Header headerText='Albums!' />
+               <AlbumList />
+          </View>
+
+     );
+};
 //Arrow function implicitly returns when on one liners.
 
 //render it to the screen

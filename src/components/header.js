@@ -23,7 +23,7 @@ const styles = {
           alignItems: 'center', //flex box prop for horizontal placement
           height: 60,
           paddingTop: 15,
-          elevation: 3,
+          elevation: 10,
           position: 'relative'
      },
      textStyle: {
