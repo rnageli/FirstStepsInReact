@@ -15,7 +15,7 @@ class AlbumList extends Component {
 
      renderAlbums() {
           return this.state.albums.map(
-               album => <Text>{album.title}</Text>
+               album => <Text key={album.title}>{album.title}</Text>
           );
           /*
           Note on map function:
