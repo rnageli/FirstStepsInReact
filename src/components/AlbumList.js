@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import axios from 'axios';
-
+import AlbumDetail from './AlbumDetail';
 
 class AlbumList extends Component {
 
@@ -15,8 +15,12 @@ class AlbumList extends Component {
 
      renderAlbums() {
           return this.state.albums.map(
-               album => <Text key={album.title}>{album.title}</Text>
+               album => <AlbumDetail key={album.title} albumData={album} />
           );
+          /*Added key to the iterator.
+          Reasons: helps react to update each item. Cannot use a array index
+          as it is not consistent for re-renders.
+
           /*
           Note on map function:
                It is used on arrays similar to foreach loop in java.
