@@ -32,7 +32,7 @@ const AlbumDetail = ({ albumData }) => {
                     <Button buttonText='Buy' onPressFunc={() => Linking.openURL(url)} />
                </CardSection>
           </Card>
-     );
+     );/*Note that we are passing 2 props*/
 };
 
 export default AlbumDetail;
