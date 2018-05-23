@@ -1,11 +1,12 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-const Button = ({ buttonText, onPressFunc }) => {
+const Button = ({ children, onPressFunc }) => {
+     // Refers to all the children standard object of props for this button
      const { buttonTextStyle, buttonStyle } = styles;
      return (
           <TouchableOpacity onPress={onPressFunc} style={buttonStyle}>
-               <Text style={buttonTextStyle}>{buttonText}</Text>
+               <Text style={buttonTextStyle}>{children}</Text>
           </TouchableOpacity>
      );
 };

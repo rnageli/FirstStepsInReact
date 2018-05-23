@@ -29,10 +29,10 @@ const AlbumDetail = ({ albumData }) => {
                     <Image style={albumCoverImageStyle} source={{ uri: image }} />
                </CardSection>
                <CardSection>
-                    <Button buttonText='Buy' onPressFunc={() => Linking.openURL(url)} />
+                    <Button onPressFunc={() => Linking.openURL(url)}>Buy Now</Button>
                </CardSection>
           </Card>
-     );/*Note that we are passing 2 props*/
+     );/*Note that we are passing 2 props to the button*/
 };
 
 export default AlbumDetail;
